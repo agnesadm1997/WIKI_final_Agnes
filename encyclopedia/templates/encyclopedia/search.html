@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia Search
+{% endblock %}
+
+{% block body %}
+    {% for find in finds %}
+        <li><a href=wiki/{{find}}>{{find}}</a></li>
+    {% endfor %}
+
+    
+{% endblock %}
